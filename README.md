@@ -4,13 +4,13 @@
 
 # Motivasyonunuz Nedir?
  
- Üniversite sınavına hazırlanan öğrencilerin denemelerini kolayca takip edip ilerlemelerini ve eksiklerinin farkına varmaları. Konu takip sistemi sayesinde bitirdikleri konuları kolay ve anlaşılır şekilde kaydetebilecekleri bir uygulma geliştirerek çalışmalarına katkı sağlamak.
+ Üniversite sınavına hazırlanan öğrencilerin denemelerini kolayca takip edip ilerlemelerinin ve eksiklerinin farkına varmaları. Konu takip sistemi sayesinde bitirdikleri konuları kolay ve anlaşılır şekilde kaydedebilecekleri bir uygulama geliştirerek çalışmalarına katkı sağlamak.
  
 # Projenizin Özellikleri Nelerdir?
 
 ● Öğrenciye Özel Kayıt Sistemi
 
-● Yayın Adı-Deneme Tarihi-Derslerdeki Netlerinizi Kolayca Kaydedebilirsiniz.
+● Yayın Adı - Deneme Tarihi - Derslerdeki Netlerinizi ve Deneme Hakkındaki Yorumlarınızı kolayca kaydedebilirsiniz.
 
 ● Grafiklerle ilerlemenizi takip edebilirsiniz.
 
