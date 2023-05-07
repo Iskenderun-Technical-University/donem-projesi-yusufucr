@@ -21,3 +21,9 @@
 # Projenizde Kullanacığınız Muhtemel Veritabanı Tabloları Neler Olacaktır?
 
 Bu projemde Microsoft SQL veritabanını kullanacağım.
+
+● Öğrenci Bilgileri
+
+● Deneme Bilgileri
+
+● Konu Listeleri 
