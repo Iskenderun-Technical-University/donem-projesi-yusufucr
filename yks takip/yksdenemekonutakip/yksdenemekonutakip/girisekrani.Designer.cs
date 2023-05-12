@@ -34,8 +34,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxtelefon = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxsifre = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -98,24 +98,25 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Giriş Yap";
             // 
-            // maskedTextBox1
+            // maskedTextBoxtelefon
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(725, 256);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox1.TabIndex = 1;
+            this.maskedTextBoxtelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(725, 256);
+            this.maskedTextBoxtelefon.Mask = "(999) 000-0000";
+            this.maskedTextBoxtelefon.Name = "maskedTextBoxtelefon";
+            this.maskedTextBoxtelefon.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxtelefon.TabIndex = 1;
             // 
-            // maskedTextBox2
+            // maskedTextBoxsifre
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(725, 339);
-            this.maskedTextBox2.Mask = "000000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox2.TabIndex = 2;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.maskedTextBoxsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxsifre.Location = new System.Drawing.Point(725, 339);
+            this.maskedTextBoxsifre.Mask = "00000";
+            this.maskedTextBoxsifre.Name = "maskedTextBoxsifre";
+            this.maskedTextBoxsifre.PasswordChar = '*';
+            this.maskedTextBoxsifre.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxsifre.TabIndex = 2;
+            this.maskedTextBoxsifre.ValidatingType = typeof(int);
             // 
             // label1
             // 
@@ -175,8 +176,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.maskedTextBoxsifre);
+            this.Controls.Add(this.maskedTextBoxtelefon);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -197,8 +198,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxtelefon;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxsifre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;

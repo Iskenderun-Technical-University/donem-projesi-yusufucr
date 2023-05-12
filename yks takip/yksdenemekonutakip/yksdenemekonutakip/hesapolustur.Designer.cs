@@ -35,14 +35,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxsifre = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxtelefon = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxad = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxsoyad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -93,6 +93,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Kaydol";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -112,24 +113,24 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Telefon";
             // 
-            // maskedTextBox2
+            // maskedTextBoxsifre
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(733, 483);
-            this.maskedTextBox2.Mask = "000000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox2.TabIndex = 4;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.maskedTextBoxsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxsifre.Location = new System.Drawing.Point(733, 483);
+            this.maskedTextBoxsifre.Mask = "00000";
+            this.maskedTextBoxsifre.Name = "maskedTextBoxsifre";
+            this.maskedTextBoxsifre.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxsifre.TabIndex = 4;
+            this.maskedTextBoxsifre.ValidatingType = typeof(int);
             // 
-            // maskedTextBox1
+            // maskedTextBoxtelefon
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(733, 403);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox1.TabIndex = 3;
+            this.maskedTextBoxtelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(733, 403);
+            this.maskedTextBoxtelefon.Mask = "(999) 000-0000";
+            this.maskedTextBoxtelefon.Name = "maskedTextBoxtelefon";
+            this.maskedTextBoxtelefon.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxtelefon.TabIndex = 3;
             // 
             // label3
             // 
@@ -152,13 +153,14 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // textBoxad
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(733, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 41);
-            this.textBox1.TabIndex = 1;
+            this.textBoxad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxad.Location = new System.Drawing.Point(733, 243);
+            this.textBoxad.Name = "textBoxad";
+            this.textBoxad.Size = new System.Drawing.Size(279, 41);
+            this.textBoxad.TabIndex = 1;
+            this.textBoxad.TextChanged += new System.EventHandler(this.textBoxad_TextChanged);
             // 
             // label5
             // 
@@ -178,13 +180,14 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Soyad";
             // 
-            // textBox2
+            // textBoxsoyad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(733, 323);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(279, 41);
-            this.textBox2.TabIndex = 2;
+            this.textBoxsoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBoxsoyad.Location = new System.Drawing.Point(733, 323);
+            this.textBoxsoyad.Name = "textBoxsoyad";
+            this.textBoxsoyad.Size = new System.Drawing.Size(279, 41);
+            this.textBoxsoyad.TabIndex = 2;
+            this.textBoxsoyad.TextChanged += new System.EventHandler(this.textBoxsoyad_TextChanged);
             // 
             // hesapolustur
             // 
@@ -193,14 +196,14 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1143, 705);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxsoyad);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxad);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.maskedTextBoxsifre);
+            this.Controls.Add(this.maskedTextBoxtelefon);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -224,13 +227,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxsifre;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxtelefon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxad;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxsoyad;
     }
 }
