@@ -8,3 +8,15 @@ C:\Users\ucar2\Desktop\ykstakip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\
 C:\Users\ucar2\Desktop\ykstakip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.pdb
 C:\Users\ucar2\Desktop\ykstakip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.acilisekrani.resources
 C:\Users\ucar2\Desktop\ykstakip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.girisekrani.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\bin\Debug\yksdenemekonutakip.exe
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\bin\Debug\yksdenemekonutakip.pdb
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.csproj.AssemblyReference.cache
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.acilisekrani.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.girisekrani.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.hesapolustur.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.Properties.Resources.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.csproj.GenerateResource.cache
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.csproj.CoreCompileInputs.cache
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.exe
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.pdb
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.sifremiunuttum.resources
