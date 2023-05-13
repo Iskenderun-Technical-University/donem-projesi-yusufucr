@@ -32,8 +32,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxsifre = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxtelefon = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -51,17 +51,18 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(766, 443);
+            this.button1.Location = new System.Drawing.Point(771, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 46);
             this.button1.TabIndex = 27;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(741, 351);
+            this.label2.Location = new System.Drawing.Point(746, 377);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 31;
@@ -70,30 +71,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(741, 271);
+            this.label1.Location = new System.Drawing.Point(746, 297);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 16);
             this.label1.TabIndex = 30;
             this.label1.Text = "Telefon";
             // 
-            // maskedTextBox2
+            // maskedTextBoxsifre
             // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(734, 370);
-            this.maskedTextBox2.Mask = "000000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox2.TabIndex = 26;
-            this.maskedTextBox2.ValidatingType = typeof(int);
+            this.maskedTextBoxsifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxsifre.Location = new System.Drawing.Point(739, 396);
+            this.maskedTextBoxsifre.Mask = "00000";
+            this.maskedTextBoxsifre.Name = "maskedTextBoxsifre";
+            this.maskedTextBoxsifre.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxsifre.TabIndex = 26;
+            this.maskedTextBoxsifre.ValidatingType = typeof(int);
             // 
-            // maskedTextBox1
+            // maskedTextBoxtelefon
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(734, 290);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(279, 38);
-            this.maskedTextBox1.TabIndex = 25;
+            this.maskedTextBoxtelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(739, 316);
+            this.maskedTextBoxtelefon.Mask = "(999) 000-0000";
+            this.maskedTextBoxtelefon.Name = "maskedTextBoxtelefon";
+            this.maskedTextBoxtelefon.Size = new System.Drawing.Size(279, 38);
+            this.maskedTextBoxtelefon.TabIndex = 25;
             // 
             // label3
             // 
@@ -157,8 +158,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.maskedTextBoxsifre);
+            this.Controls.Add(this.maskedTextBoxtelefon);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -178,8 +179,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxsifre;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxtelefon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
