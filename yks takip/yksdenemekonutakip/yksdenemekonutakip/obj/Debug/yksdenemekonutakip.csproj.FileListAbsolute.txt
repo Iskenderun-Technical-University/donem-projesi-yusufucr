@@ -20,3 +20,4 @@ C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.exe
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.pdb
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.sifremiunuttum.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.anasayfa.resources

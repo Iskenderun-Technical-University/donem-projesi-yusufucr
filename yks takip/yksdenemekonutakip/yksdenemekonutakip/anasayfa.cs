@@ -15,5 +15,15 @@ namespace yksdenemekonutakip
         {
             InitializeComponent();
         }
+
+        private void anasayfa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -79,6 +79,9 @@
     <EmbeddedResource Include="acilisekrani.resx">
       <DependentUpon>acilisekrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="girisekrani.resx">
       <DependentUpon>girisekrani.cs</DependentUpon>
     </EmbeddedResource>
