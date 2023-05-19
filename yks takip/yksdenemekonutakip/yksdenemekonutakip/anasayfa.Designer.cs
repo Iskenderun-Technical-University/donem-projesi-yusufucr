@@ -72,6 +72,7 @@
             this.buttondenemeekle.TabIndex = 1;
             this.buttondenemeekle.Text = "DENEME EKLE";
             this.buttondenemeekle.UseVisualStyleBackColor = false;
+            this.buttondenemeekle.Click += new System.EventHandler(this.buttondenemeekle_Click);
             // 
             // buttonsil
             // 

@@ -55,6 +55,12 @@
     <Compile Include="anasayfa.Designer.cs">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="denemeekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="denemeekle.Designer.cs">
+      <DependentUpon>denemeekle.cs</DependentUpon>
+    </Compile>
     <Compile Include="girisekrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="denemeekle.resx">
+      <DependentUpon>denemeekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="girisekrani.resx">
       <DependentUpon>girisekrani.cs</DependentUpon>

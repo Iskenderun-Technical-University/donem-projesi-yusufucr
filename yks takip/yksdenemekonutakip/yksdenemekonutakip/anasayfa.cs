@@ -25,5 +25,11 @@ namespace yksdenemekonutakip
         {
 
         }
+
+        private void buttondenemeekle_Click(object sender, EventArgs e)
+        {
+            denemeekle frm= new denemeekle();
+            frm.Show();
+        }
     }
 }
