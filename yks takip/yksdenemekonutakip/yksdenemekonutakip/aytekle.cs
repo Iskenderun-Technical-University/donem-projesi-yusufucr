@@ -25,7 +25,7 @@ namespace yksdenemekonutakip
         sqlbaglanti bgl=new sqlbaglanti();
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("insert into denemelerayt (denemead,denemetarih,telefon,aytmat,aytfen,sos1,sos2,toplamnet) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
+            SqlCommand komut = new SqlCommand("insert into denemelerayt (denemead,denemetarih,telefon,aytmat,aytfen,sos1,sos2) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
 
             komut.Parameters.AddWithValue("@p1", textBoxdenemadi.Text);
             komut.Parameters.AddWithValue("@p2", dateTimePicker1.Value);
@@ -34,18 +34,17 @@ namespace yksdenemekonutakip
             komut.Parameters.AddWithValue("@p5", numericUpDownaytfen.Value);
             komut.Parameters.AddWithValue("@p6", numericUpDownsos1.Value);
             komut.Parameters.AddWithValue("@p7", numericUpDownsos2.Value);
-            
-
-
-
 
 
 
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
 
+
+
             MessageBox.Show("KAYIT BAŞARILI");
             this.Close();
+
         }
     }
 }

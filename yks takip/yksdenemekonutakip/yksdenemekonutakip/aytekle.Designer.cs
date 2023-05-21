@@ -82,7 +82,7 @@
             this.groupBoxayt.Controls.Add(this.numericUpDownaytmat);
             this.groupBoxayt.Controls.Add(this.numericUpDownsos1);
             this.groupBoxayt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBoxayt.Location = new System.Drawing.Point(223, 228);
+            this.groupBoxayt.Location = new System.Drawing.Point(226, 211);
             this.groupBoxayt.Name = "groupBoxayt";
             this.groupBoxayt.Size = new System.Drawing.Size(282, 366);
             this.groupBoxayt.TabIndex = 52;
@@ -141,6 +141,16 @@
             // 
             this.numericUpDownaytfen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownaytfen.Location = new System.Drawing.Point(129, 189);
+            this.numericUpDownaytfen.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.numericUpDownaytfen.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownaytfen.Name = "numericUpDownaytfen";
             this.numericUpDownaytfen.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownaytfen.TabIndex = 2;
@@ -149,6 +159,16 @@
             // 
             this.numericUpDownaytmat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownaytmat.Location = new System.Drawing.Point(129, 142);
+            this.numericUpDownaytmat.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.numericUpDownaytmat.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownaytmat.Name = "numericUpDownaytmat";
             this.numericUpDownaytmat.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownaytmat.TabIndex = 1;
@@ -157,6 +177,16 @@
             // 
             this.numericUpDownsos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownsos1.Location = new System.Drawing.Point(129, 95);
+            this.numericUpDownsos1.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.numericUpDownsos1.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownsos1.Name = "numericUpDownsos1";
             this.numericUpDownsos1.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownsos1.TabIndex = 0;
@@ -204,7 +234,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(242, 619);
+            this.button1.Location = new System.Drawing.Point(237, 604);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(243, 46);
             this.button1.TabIndex = 46;

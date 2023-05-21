@@ -19,20 +19,12 @@ namespace yksdenemekonutakip
         }
         public string telefon;
 
-        sqlbaglanti bgl = new sqlbaglanti();
-        private void anasayfa_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'ykstakipDataSet2.denemelerayt' table. You can move, or remove it, as needed.
-            this.denemeleraytTableAdapter.Fill(this.ykstakipDataSet2.denemelerayt);
-            // TODO: This line of code loads data into the 'ykstakipDataSet1.denemeler' table. You can move, or remove it, as needed.
-            this.denemelerTableAdapter1.Fill(this.ykstakipDataSet1.denemeler);
-            // TODO: This line of code loads data into the 'ykstakipDataSet.denemeler' table. You can move, or remove it, as needed.
        
-            labeltelefon.Text= telefon;
-            
-        }
 
        
+        
+
+
 
         private void buttondenemeekle_Click(object sender, EventArgs e)
         {
@@ -49,6 +41,52 @@ namespace yksdenemekonutakip
             aytekle frm = new aytekle();
             frm.telefon = labeltelefon.Text;
             frm.Show();
+        }
+
+        private void anasayfa_Load(object sender, EventArgs e)
+        {
+
+
+            SqlConnection baglanti = new SqlConnection(@"Data Source=LAPTOP-FMJQ9I6Q\SQLEXPRESS; Initial Catalog = ykstakip; Integrated Security = True");
+
+            {
+
+
+
+                labeltelefon.Text = telefon;
+                SqlCommand komut = new SqlCommand("select denemead,denemetarih,turkce,mat,fen,sos,toplamnet from denemeler where telefon=@p1", baglanti);
+                komut.Parameters.AddWithValue("@p1", labeltelefon.Text);
+                SqlDataAdapter da = new SqlDataAdapter(komut);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+
+                SqlCommand komut2 = new SqlCommand("select denemead,denemetarih,aytmat,aytfen,sos1,sos2,toplamnet from denemelerayt where telefon=@p2", baglanti);
+                komut2.Parameters.AddWithValue("@p2", labeltelefon.Text);
+                SqlDataAdapter da2 = new SqlDataAdapter(komut2);
+                DataTable dt2 = new DataTable();
+                da2.Fill(dt2);
+                dataGridView2.DataSource = dt2;
+
+
+                dataGridView1.Columns["denemead"].HeaderText = "Yayın";
+                dataGridView1.Columns["denemetarih"].HeaderText = "Tarih";
+                dataGridView1.Columns["turkce"].HeaderText = "Türkçe";
+                dataGridView1.Columns["mat"].HeaderText = "Matematik";
+                dataGridView1.Columns["fen"].HeaderText = "Fen";
+                dataGridView1.Columns["sos"].HeaderText = "Sosyal";
+                dataGridView1.Columns["toplamnet"].HeaderText = "Toplam";
+
+                dataGridView2.Columns["denemead"].HeaderText = "Yayın";
+                dataGridView2.Columns["denemetarih"].HeaderText = "Tarih";
+                dataGridView2.Columns["aytmat"].HeaderText = "Türkçe";
+                dataGridView2.Columns["aytfen"].HeaderText = "Matematik";
+                dataGridView2.Columns["sos1"].HeaderText = "Fen";
+                dataGridView2.Columns["sos2"].HeaderText = "Sosyal";
+                dataGridView2.Columns["toplamnet"].HeaderText = "Toplam";
+
+
+            }
         }
     }
     }
