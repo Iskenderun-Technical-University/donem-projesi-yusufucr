@@ -55,11 +55,17 @@
     <Compile Include="anasayfa.Designer.cs">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </Compile>
-    <Compile Include="denemeekle.cs">
+    <Compile Include="aytekle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="denemeekle.Designer.cs">
-      <DependentUpon>denemeekle.cs</DependentUpon>
+    <Compile Include="aytekle.Designer.cs">
+      <DependentUpon>aytekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tytekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tytekle.Designer.cs">
+      <DependentUpon>tytekle.cs</DependentUpon>
     </Compile>
     <Compile Include="girisekrani.cs">
       <SubType>Form</SubType>
@@ -82,14 +88,32 @@
       <DependentUpon>sifremiunuttum.cs</DependentUpon>
     </Compile>
     <Compile Include="sqlbaglanti.cs" />
+    <Compile Include="ykstakipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ykstakipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ykstakipDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ykstakipDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ykstakipDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ykstakipDataSet2.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="acilisekrani.resx">
       <DependentUpon>acilisekrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="denemeekle.resx">
-      <DependentUpon>denemeekle.cs</DependentUpon>
+    <EmbeddedResource Include="aytekle.resx">
+      <DependentUpon>aytekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tytekle.resx">
+      <DependentUpon>tytekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="girisekrani.resx">
       <DependentUpon>girisekrani.cs</DependentUpon>
@@ -109,6 +133,7 @@
     <EmbeddedResource Include="sifremiunuttum.resx">
       <DependentUpon>sifremiunuttum.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,6 +143,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ykstakipDataSet.xsc">
+      <DependentUpon>ykstakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ykstakipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ykstakipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ykstakipDataSet.xss">
+      <DependentUpon>ykstakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ykstakipDataSet1.xsc">
+      <DependentUpon>ykstakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ykstakipDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ykstakipDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ykstakipDataSet1.xss">
+      <DependentUpon>ykstakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ykstakipDataSet2.xsc">
+      <DependentUpon>ykstakipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ykstakipDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ykstakipDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ykstakipDataSet2.xss">
+      <DependentUpon>ykstakipDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,8 @@ using System.Data.SqlClient;
 
 namespace yksdenemekonutakip
 {
+
+   
     public partial class girisekrani : Form
     {
         public girisekrani()
@@ -18,7 +20,7 @@ namespace yksdenemekonutakip
         }
 
         sqlbaglanti bgl = new sqlbaglanti();
-
+       
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -29,7 +31,7 @@ namespace yksdenemekonutakip
             if (dr.Read())
             {
                 anasayfa frm = new anasayfa();
-
+                frm.telefon = maskedTextBoxtelefon.Text;
                 frm.Show();                                     //Şifre Ve Tc veri tabanıyla karşılaştırıldı 
                 this.Close();
             }
