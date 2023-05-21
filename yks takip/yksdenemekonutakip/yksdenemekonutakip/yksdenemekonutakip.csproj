@@ -61,6 +61,12 @@
     <Compile Include="aytekle.Designer.cs">
       <DependentUpon>aytekle.cs</DependentUpon>
     </Compile>
+    <Compile Include="istatistikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="istatistikler.Designer.cs">
+      <DependentUpon>istatistikler.cs</DependentUpon>
+    </Compile>
     <Compile Include="tytekle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aytekle.resx">
       <DependentUpon>aytekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="istatistikler.resx">
+      <DependentUpon>istatistikler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tytekle.resx">
       <DependentUpon>tytekle.cs</DependentUpon>

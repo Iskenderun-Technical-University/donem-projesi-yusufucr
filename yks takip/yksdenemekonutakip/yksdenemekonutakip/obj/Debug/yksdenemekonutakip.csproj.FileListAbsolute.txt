@@ -24,3 +24,4 @@ C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\bin\Debug\yksdenemekonutakip.exe.config
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.aytekle.resources
 C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.tytekle.resources
+C:\Users\ucar2\Desktop\yks takip\yksdenemekonutakip\yksdenemekonutakip\obj\Debug\yksdenemekonutakip.istatistikler.resources

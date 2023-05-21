@@ -131,6 +131,7 @@
             // 
             // numericUpDownsos2
             // 
+            this.numericUpDownsos2.DecimalPlaces = 2;
             this.numericUpDownsos2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownsos2.Location = new System.Drawing.Point(129, 241);
             this.numericUpDownsos2.Name = "numericUpDownsos2";
@@ -139,6 +140,7 @@
             // 
             // numericUpDownaytfen
             // 
+            this.numericUpDownaytfen.DecimalPlaces = 2;
             this.numericUpDownaytfen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownaytfen.Location = new System.Drawing.Point(129, 189);
             this.numericUpDownaytfen.Maximum = new decimal(new int[] {
@@ -157,6 +159,7 @@
             // 
             // numericUpDownaytmat
             // 
+            this.numericUpDownaytmat.DecimalPlaces = 2;
             this.numericUpDownaytmat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownaytmat.Location = new System.Drawing.Point(129, 142);
             this.numericUpDownaytmat.Maximum = new decimal(new int[] {
@@ -175,6 +178,7 @@
             // 
             // numericUpDownsos1
             // 
+            this.numericUpDownsos1.DecimalPlaces = 2;
             this.numericUpDownsos1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownsos1.Location = new System.Drawing.Point(129, 95);
             this.numericUpDownsos1.Maximum = new decimal(new int[] {
@@ -226,6 +230,7 @@
             this.textBoxdenemadi.Name = "textBoxdenemadi";
             this.textBoxdenemadi.Size = new System.Drawing.Size(288, 38);
             this.textBoxdenemadi.TabIndex = 45;
+            this.textBoxdenemadi.TextChanged += new System.EventHandler(this.textBoxdenemadi_TextChanged);
             // 
             // button1
             // 

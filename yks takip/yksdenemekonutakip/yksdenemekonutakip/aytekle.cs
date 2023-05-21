@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace yksdenemekonutakip
 {
@@ -21,10 +22,17 @@ namespace yksdenemekonutakip
         {
             labeltelefon.Text = telefon;
         }
-
+        
         sqlbaglanti bgl=new sqlbaglanti();
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBoxdenemadi.Text == string.Empty)
+            {
+
+                MessageBox.Show("Deneme Adı Giriniz!");
+            }
+
+            else {
             SqlCommand komut = new SqlCommand("insert into denemelerayt (denemead,denemetarih,telefon,aytmat,aytfen,sos1,sos2) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
 
             komut.Parameters.AddWithValue("@p1", textBoxdenemadi.Text);
@@ -42,9 +50,19 @@ namespace yksdenemekonutakip
 
 
 
-            MessageBox.Show("KAYIT BAŞARILI");
+            MessageBox.Show("KAYIT BAŞARILI-Sayfayı Yenileyin");
             this.Close();
+            }
 
+
+
+        }
+
+        private void textBoxdenemadi_TextChanged(object sender, EventArgs e)
+        {
+            textBoxdenemadi.Text = textBoxdenemadi.Text.ToUpper();
+            textBoxdenemadi.SelectionStart = textBoxdenemadi.Text.Length;
+            
         }
     }
 }

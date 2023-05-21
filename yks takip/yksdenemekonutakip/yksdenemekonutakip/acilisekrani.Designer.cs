@@ -94,9 +94,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(140, 413);
+            this.button2.Location = new System.Drawing.Point(165, 400);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(283, 57);
+            this.button2.Size = new System.Drawing.Size(283, 65);
             this.button2.TabIndex = 6;
             this.button2.Text = "HESAP OLUŞTUR";
             this.button2.UseVisualStyleBackColor = false;
@@ -109,9 +109,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Medium", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(140, 339);
+            this.button1.Location = new System.Drawing.Point(165, 326);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 57);
+            this.button1.Size = new System.Drawing.Size(283, 65);
             this.button1.TabIndex = 5;
             this.button1.Text = "GİRİŞ YAP";
             this.button1.UseVisualStyleBackColor = false;

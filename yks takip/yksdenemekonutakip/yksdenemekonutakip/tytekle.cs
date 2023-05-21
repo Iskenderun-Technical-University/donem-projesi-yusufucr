@@ -23,8 +23,16 @@ namespace yksdenemekonutakip
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-                    SqlCommand komut = new SqlCommand("insert into denemeler (denemead,denemetarih,telefon,turkce,mat,fen,sos) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
+
+            if (textBoxdenemadi.Text == string.Empty)
+            {
+
+                MessageBox.Show("Deneme Adı Giriniz!");
+            }
+
+            else { 
+
+            SqlCommand komut = new SqlCommand("insert into denemeler (denemead,denemetarih,telefon,turkce,mat,fen,sos) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
 
                     komut.Parameters.AddWithValue("@p1", textBoxdenemadi.Text);
                     komut.Parameters.AddWithValue("@p2", dateTimePicker1.Value);
@@ -41,16 +49,23 @@ namespace yksdenemekonutakip
                     komut.ExecuteNonQuery();
                     bgl.baglanti().Close();
 
-                    MessageBox.Show("KAYIT BAŞARILI");
+                    MessageBox.Show("KAYIT BAŞARILI-Sayfayı Yenileyin");
                     this.Close();
-                
-                   
-                }
+            }
+
+
+        }
 
         public string telefon;
         private void tytekle_Load(object sender, EventArgs e)
         {
             labeltelefon.Text = telefon;
+        }
+
+        private void textBoxdenemadi_TextChanged(object sender, EventArgs e)
+        {
+            textBoxdenemadi.Text = textBoxdenemadi.Text.ToUpper();
+            textBoxdenemadi.SelectionStart = textBoxdenemadi.Text.Length;
         }
     }
         }

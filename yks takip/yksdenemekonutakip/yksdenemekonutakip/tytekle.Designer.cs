@@ -68,6 +68,7 @@
             this.textBoxdenemadi.Name = "textBoxdenemadi";
             this.textBoxdenemadi.Size = new System.Drawing.Size(288, 38);
             this.textBoxdenemadi.TabIndex = 22;
+            this.textBoxdenemadi.TextChanged += new System.EventHandler(this.textBoxdenemadi_TextChanged);
             // 
             // button1
             // 
@@ -162,32 +163,76 @@
             // 
             // numericUpDownsos
             // 
+            this.numericUpDownsos.DecimalPlaces = 2;
             this.numericUpDownsos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownsos.Location = new System.Drawing.Point(128, 241);
+            this.numericUpDownsos.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownsos.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownsos.Name = "numericUpDownsos";
             this.numericUpDownsos.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownsos.TabIndex = 3;
             // 
             // numericUpDownfen
             // 
+            this.numericUpDownfen.DecimalPlaces = 2;
             this.numericUpDownfen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownfen.Location = new System.Drawing.Point(128, 189);
+            this.numericUpDownfen.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.numericUpDownfen.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownfen.Name = "numericUpDownfen";
             this.numericUpDownfen.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownfen.TabIndex = 2;
             // 
             // numericUpDownmat
             // 
+            this.numericUpDownmat.DecimalPlaces = 2;
             this.numericUpDownmat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownmat.Location = new System.Drawing.Point(128, 142);
+            this.numericUpDownmat.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.numericUpDownmat.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownmat.Name = "numericUpDownmat";
             this.numericUpDownmat.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownmat.TabIndex = 1;
             // 
             // numericUpDownturkce
             // 
+            this.numericUpDownturkce.DecimalPlaces = 2;
             this.numericUpDownturkce.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.numericUpDownturkce.Location = new System.Drawing.Point(128, 95);
+            this.numericUpDownturkce.Maximum = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
+            this.numericUpDownturkce.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.numericUpDownturkce.Name = "numericUpDownturkce";
             this.numericUpDownturkce.Size = new System.Drawing.Size(133, 34);
             this.numericUpDownturkce.TabIndex = 0;
