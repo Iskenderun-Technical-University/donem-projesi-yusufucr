@@ -9,6 +9,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Reflection.Emit;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace yksdenemekonutakip
 {
@@ -29,6 +31,7 @@ namespace yksdenemekonutakip
 
         private void buttondenemeekle_Click(object sender, EventArgs e)
         {
+           
             tytekle frm= new tytekle();
             frm.telefon = labeltelefon.Text;
             
@@ -55,7 +58,10 @@ namespace yksdenemekonutakip
 
 
                 labeltelefon.Text = telefon;
-                SqlCommand komut = new SqlCommand("select denemead,denemetarih,turkce,mat,fen,sos,toplamnet,id from denemeler where telefon=@p1", baglanti);
+               
+                
+                SqlCommand komut = new SqlCommand("UPDATE denemelerayt SET toplamnet = aytmat + aytfen + sos1+sos2 UPDATE denemeler SET toplamnet = mat + fen + sos + turkce  select denemead,denemetarih,turkce,mat,fen,sos,toplamnet,id from denemeler where telefon=@p1", baglanti);
+              
                 komut.Parameters.AddWithValue("@p1", labeltelefon.Text);
                 SqlDataAdapter da = new SqlDataAdapter(komut);
                 DataTable dt = new DataTable();
@@ -102,8 +108,7 @@ namespace yksdenemekonutakip
 
 
 
-               
-                SqlCommand komut = new SqlCommand("select denemead,denemetarih,turkce,mat,fen,sos,toplamnet,id from denemeler where telefon=@p1", baglanti);
+                SqlCommand komut = new SqlCommand("UPDATE denemelerayt SET toplamnet = aytmat + aytfen + sos1+sos2 UPDATE denemeler SET toplamnet = mat + fen + sos + turkce  select denemead,denemetarih,turkce,mat,fen,sos,toplamnet,id from denemeler where telefon=@p1", baglanti);
                 komut.Parameters.AddWithValue("@p1", labeltelefon.Text);
                 SqlDataAdapter da = new SqlDataAdapter(komut);
                 DataTable dt = new DataTable();
@@ -148,7 +153,7 @@ namespace yksdenemekonutakip
         {
             if (textBox1.Text==string.Empty)
             {
-                MessageBox.Show("Lütfen Silmek İstediğiniz Denemenin Satırına Çift Tıklayıp Sonra Butona Baınız!!!");
+                MessageBox.Show("Lütfen Silmek İstediğiniz Denemenin Satırına Çift Tıklayıp Sonra Butona Basınız !!");
             }
             else
             {
@@ -161,27 +166,26 @@ namespace yksdenemekonutakip
                 komut.Parameters.AddWithValue("@p1", Convert.ToInt32(textBox1.Text));
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Başarılı - Sayfayı Yenileyiniz");
+                MessageBox.Show("Başarılı");
                     textBox1.Text= string.Empty;
+                    buttonyenile.PerformClick();
 
-            }
+                }
             else
             {
                 SqlCommand komut = new SqlCommand("delete from denemelerayt where id=@p1", bgl.baglanti());
                 komut.Parameters.AddWithValue("@p1", Convert.ToInt32(textBox1.Text));
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Başarılı - Sayfayı Yenileyiniz");
+                MessageBox.Show("Başarılı");
                     textBox1.Text= string.Empty;
-            }
+                    buttonyenile.PerformClick();
+                }
             }
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+  
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -23,7 +23,7 @@ namespace yksdenemekonutakip
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
             if (textBoxdenemadi.Text == string.Empty)
             {
 
@@ -49,10 +49,14 @@ namespace yksdenemekonutakip
                     komut.ExecuteNonQuery();
                     bgl.baglanti().Close();
 
-                    MessageBox.Show("KAYIT BAŞARILI-Sayfayı Yenileyin");
-                    this.Close();
-            }
+                   
+                
+                MessageBox.Show("KAYIT BAŞARILI-Sayfayı Yenileyin");
+                this.Close();
 
+
+            }
+            
 
         }
 
