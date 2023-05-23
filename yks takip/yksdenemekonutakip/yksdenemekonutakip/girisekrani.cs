@@ -47,6 +47,11 @@ namespace yksdenemekonutakip
             sifremiunuttum nw = new sifremiunuttum();
             nw.Show();
         }
+
+        private void girisekrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

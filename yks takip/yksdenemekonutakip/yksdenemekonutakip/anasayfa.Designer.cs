@@ -63,7 +63,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Heavy", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 732);
+            this.label4.Location = new System.Drawing.Point(10, 734);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 36);
             this.label4.TabIndex = 4;
@@ -76,7 +76,7 @@
             this.buttondenemeekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttondenemeekle.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttondenemeekle.ForeColor = System.Drawing.Color.Black;
-            this.buttondenemeekle.Location = new System.Drawing.Point(1038, 79);
+            this.buttondenemeekle.Location = new System.Drawing.Point(1036, 100);
             this.buttondenemeekle.Name = "buttondenemeekle";
             this.buttondenemeekle.Size = new System.Drawing.Size(249, 75);
             this.buttondenemeekle.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.buttonsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonsil.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonsil.ForeColor = System.Drawing.Color.Black;
-            this.buttonsil.Location = new System.Drawing.Point(1038, 333);
+            this.buttonsil.Location = new System.Drawing.Point(1036, 354);
             this.buttonsil.Name = "buttonsil";
             this.buttonsil.Size = new System.Drawing.Size(249, 70);
             this.buttonsil.TabIndex = 2;
@@ -106,12 +106,13 @@
             this.buttonistatistik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonistatistik.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonistatistik.ForeColor = System.Drawing.Color.Black;
-            this.buttonistatistik.Location = new System.Drawing.Point(1038, 458);
+            this.buttonistatistik.Location = new System.Drawing.Point(1036, 479);
             this.buttonistatistik.Name = "buttonistatistik";
             this.buttonistatistik.Size = new System.Drawing.Size(249, 70);
             this.buttonistatistik.TabIndex = 3;
             this.buttonistatistik.Text = "İSTATİSTİKLER";
             this.buttonistatistik.UseVisualStyleBackColor = false;
+            this.buttonistatistik.Click += new System.EventHandler(this.buttonistatistik_Click);
             // 
             // buttonkonutakip
             // 
@@ -120,7 +121,7 @@
             this.buttonkonutakip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonkonutakip.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonkonutakip.ForeColor = System.Drawing.Color.Black;
-            this.buttonkonutakip.Location = new System.Drawing.Point(1038, 583);
+            this.buttonkonutakip.Location = new System.Drawing.Point(1036, 604);
             this.buttonkonutakip.Name = "buttonkonutakip";
             this.buttonkonutakip.Size = new System.Drawing.Size(249, 70);
             this.buttonkonutakip.TabIndex = 4;
@@ -143,7 +144,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(1038, 208);
+            this.button1.Location = new System.Drawing.Point(1036, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 70);
             this.button1.TabIndex = 8;
@@ -174,7 +175,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 29);
             this.label1.TabIndex = 11;
@@ -185,7 +186,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 365);
+            this.label2.Location = new System.Drawing.Point(16, 364);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 12;
@@ -205,16 +206,15 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 38);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(996, 321);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
-            
             // 
             // dataGridView2
             // 
@@ -230,13 +230,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 396);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 396);
             this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1002, 321);
+            this.dataGridView2.Size = new System.Drawing.Size(996, 323);
             this.dataGridView2.TabIndex = 14;
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick_1);
             // 
@@ -247,7 +247,7 @@
             this.buttonyenile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonyenile.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonyenile.ForeColor = System.Drawing.Color.Black;
-            this.buttonyenile.Location = new System.Drawing.Point(872, 724);
+            this.buttonyenile.Location = new System.Drawing.Point(869, 727);
             this.buttonyenile.Name = "buttonyenile";
             this.buttonyenile.Size = new System.Drawing.Size(121, 39);
             this.buttonyenile.TabIndex = 15;
@@ -257,7 +257,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1038, 14);
+            this.textBox1.Location = new System.Drawing.Point(1080, 15);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(144, 22);
             this.textBox1.TabIndex = 16;

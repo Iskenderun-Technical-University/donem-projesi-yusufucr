@@ -184,6 +184,7 @@
             this.MaximizeBox = false;
             this.Name = "girisekrani";
             this.Text = "Giriş Yap";
+            this.Load += new System.EventHandler(this.girisekrani_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

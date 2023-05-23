@@ -22,13 +22,6 @@ namespace yksdenemekonutakip
         }
         public string telefon;
 
-       
-
-       
-        
-
-
-
         private void buttondenemeekle_Click(object sender, EventArgs e)
         {
            
@@ -200,7 +193,23 @@ namespace yksdenemekonutakip
             textBox1.Text = dataGridView2.Rows[secilen].Cells[7].Value.ToString();
         }
 
-       
+        private void buttonistatistik_Click(object sender, EventArgs e)
+        {
+           if(dataGridView1.Rows.Count == 0 || dataGridView2.Rows.Count == 0)
+            {
+
+                MessageBox.Show("Lütfen En Az 1 TYT ve 1 AYT KAYDEDİNİZ ");
+
+                
+
+            }
+            else
+            {
+                istatistikler frm = new istatistikler();
+                frm.telefon = labeltelefon.Text;
+                frm.Show();
+            }
+        }
     }
     }
     
