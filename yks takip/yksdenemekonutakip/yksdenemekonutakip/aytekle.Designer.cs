@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(aytekle));
             this.labeltelefon = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBoxayt = new System.Windows.Forms.GroupBox();
@@ -59,6 +60,7 @@
             this.labeltelefon.Size = new System.Drawing.Size(44, 16);
             this.labeltelefon.TabIndex = 54;
             this.labeltelefon.Text = "label8";
+            this.labeltelefon.Visible = false;
             // 
             // label7
             // 
@@ -82,7 +84,7 @@
             this.groupBoxayt.Controls.Add(this.numericUpDownaytmat);
             this.groupBoxayt.Controls.Add(this.numericUpDownsos1);
             this.groupBoxayt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBoxayt.Location = new System.Drawing.Point(226, 211);
+            this.groupBoxayt.Location = new System.Drawing.Point(226, 221);
             this.groupBoxayt.Name = "groupBoxayt";
             this.groupBoxayt.Size = new System.Drawing.Size(282, 366);
             this.groupBoxayt.TabIndex = 52;
@@ -198,7 +200,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(226, 134);
+            this.dateTimePicker1.Location = new System.Drawing.Point(226, 144);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(288, 27);
             this.dateTimePicker1.TabIndex = 49;
@@ -207,7 +209,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(141, 134);
+            this.label3.Location = new System.Drawing.Point(141, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 25);
             this.label3.TabIndex = 48;
@@ -217,7 +219,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(66, 75);
+            this.label5.Location = new System.Drawing.Point(66, 85);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(144, 25);
             this.label5.TabIndex = 47;
@@ -226,7 +228,7 @@
             // textBoxdenemadi
             // 
             this.textBoxdenemadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxdenemadi.Location = new System.Drawing.Point(226, 66);
+            this.textBoxdenemadi.Location = new System.Drawing.Point(226, 76);
             this.textBoxdenemadi.Name = "textBoxdenemadi";
             this.textBoxdenemadi.Size = new System.Drawing.Size(288, 38);
             this.textBoxdenemadi.TabIndex = 45;
@@ -239,7 +241,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(237, 604);
+            this.button1.Location = new System.Drawing.Point(237, 614);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(243, 46);
             this.button1.TabIndex = 46;
@@ -261,6 +263,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxdenemadi);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "aytekle";
             this.Text = "AYT Deneme Ekle";

@@ -256,6 +256,7 @@
             this.labeltelefon.Size = new System.Drawing.Size(44, 16);
             this.labeltelefon.TabIndex = 44;
             this.labeltelefon.Text = "label8";
+            this.labeltelefon.Visible = false;
             // 
             // tytekle
             // 

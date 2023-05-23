@@ -26,8 +26,48 @@ namespace yksdenemekonutakip
         {
 
 
-
             labeltelefon.Text = telefon;
+
+            SqlCommand komut3 = new SqlCommand("SELECT COUNT(*) FROM denemeler WHERE telefon = @p3;", bgl.baglanti());
+            komut3.Parameters.AddWithValue("@p3", labeltelefon.Text);
+            
+            int kayitSayisi = (int)komut3.ExecuteScalar();
+            label3.Text = "Toplam Deneme: " + kayitSayisi.ToString();
+
+            SqlCommand komut4 = new SqlCommand("SELECT MAX(toplamnet) FROM denemeler WHERE telefon = @p4;", bgl.baglanti());
+            komut4.Parameters.AddWithValue("@p4", labeltelefon.Text);
+
+            int kayitSayisi2 = (int)komut4.ExecuteScalar();
+            label5.Text = "En Yüksek Net: " + kayitSayisi2.ToString();
+
+
+            SqlCommand komut5 = new SqlCommand("SELECT MIN(toplamnet) FROM denemeler WHERE telefon = @p5;", bgl.baglanti());
+            komut5.Parameters.AddWithValue("@p5", labeltelefon.Text);
+
+            int kayitSayisi3 = (int)komut5.ExecuteScalar();
+            label6.Text = "En Düşük Net: " + kayitSayisi3.ToString();
+
+            SqlCommand komut6 = new SqlCommand("SELECT COUNT(*) FROM denemelerayt WHERE telefon = @p6;", bgl.baglanti());
+            komut6.Parameters.AddWithValue("@p6", labeltelefon.Text);
+
+            int kayitSayisi4 = (int)komut6.ExecuteScalar();
+            label9.Text = "Toplam Deneme: " + kayitSayisi4.ToString();
+
+            SqlCommand komut7 = new SqlCommand("SELECT MAX(toplamnet) FROM denemelerayt WHERE telefon = @p7;", bgl.baglanti());
+            komut7.Parameters.AddWithValue("@p7", labeltelefon.Text);
+
+            int kayitSayisi5 = (int)komut7.ExecuteScalar();
+            label8.Text = "En Yüksek Net: " + kayitSayisi5.ToString();
+
+
+            SqlCommand komut8 = new SqlCommand("SELECT MIN(toplamnet) FROM denemelerayt WHERE telefon = @p8;", bgl.baglanti());
+            komut8.Parameters.AddWithValue("@p8", labeltelefon.Text);
+
+            int kayitSayisi6 = (int)komut8.ExecuteScalar();
+            label7.Text = "En Düşük Net: " + kayitSayisi6.ToString();
+
+
+
 
             SqlCommand komut = new SqlCommand("SELECT AVG(turkce),AVG(mat),AVG(fen),AVG(sos),AVG(toplamnet) FROM denemeler WHERE telefon = @p1;", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", labeltelefon.Text);
