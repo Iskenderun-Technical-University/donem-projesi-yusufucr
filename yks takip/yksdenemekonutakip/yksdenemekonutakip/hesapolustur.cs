@@ -27,6 +27,16 @@ namespace yksdenemekonutakip
             {
                 MessageBox.Show("Lütfen Formu Eksiksiz Doldurunuz!!!");
             }
+            else { 
+            SqlCommand kontrolKomutu = new SqlCommand("SELECT COUNT(*) FROM kullanicilar WHERE telefon = @p3", bgl.baglanti());
+            kontrolKomutu.Parameters.AddWithValue("@p3", maskedTextBoxtelefon.Text);
+
+            int kayitSayisi = (int)kontrolKomutu.ExecuteScalar();
+
+            if (kayitSayisi > 0)
+            {
+                MessageBox.Show("Bu telefon numarasıyla kayıtlı bir kullanıcı zaten var!");
+            }
             else
             {
                 SqlCommand komut = new SqlCommand("insert into kullanicilar (ad,soyad,telefon,sifre) values (@p1,@p2,@p3,@p4)", bgl.baglanti()); //Kayıt verilerinin veritabanına alınması
@@ -43,6 +53,7 @@ namespace yksdenemekonutakip
 
                 MessageBox.Show("-Kayıt Başarılı-");
                 this.Close();
+            }
             }
         }
 

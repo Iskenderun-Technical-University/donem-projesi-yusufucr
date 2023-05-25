@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tytekle));
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxdenemadi = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -272,6 +273,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxdenemadi);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "tytekle";
             this.Text = "TYT Deneme Ekle";
