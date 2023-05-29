@@ -5,7 +5,7 @@
 
 # Motivasyonunuz Nedir?
  
- Üniversite sınavına hazırlanan öğrencilerin denemelerini kolayca takip edip ilerlemelerinin ve eksiklerinin farkına varmaları.
+ Üniversite sınavına hazırlanan öğrencilerin denemelerini kolayca takip edip ilerlemelerinin ve eksiklerinin farkına varmaları.Yapılacaklar listesi sayesinde görevlerini takip etmelerini sağlamak.
  
 # Projenizin Özellikleri Nelerdir?
 
@@ -15,7 +15,7 @@
 
 ● Grafiklerle ilerlemenizi takip edebilirsiniz.
 
-● Yks sınavına kaç gün kaldığını detaylı şekilde öğrenebilirsiniz.
+● To Do List özelliği
 
 # Projenizde Kullanacığınız Muhtemel Veritabanı Tabloları Neler Olacaktır?
 
@@ -25,15 +25,22 @@ Bu projemde Microsoft SQL veritabanını kullanacağım.
 
 ● Deneme Bilgileri(TYT-AYT)
 
+● Yapılacaklar Listesi
+
 # Bu Proje Bana Neler Kazandırdı?
 
 Bu proje üzerinde çalışırken bir çok sql sorgusunu öğrenip uygulama şansım oldu.
 Projemde Kullandığım Bazı Sorgular:
 ● Select
+
 ● İnsert İnto
+
 ● Where
+
 ● Update
+
 ● Delete
+
 ● MAX-MIN-COUNT-AVG
 ...
 
