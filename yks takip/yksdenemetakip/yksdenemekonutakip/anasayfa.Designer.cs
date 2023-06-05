@@ -36,7 +36,7 @@
             this.buttondenemeekle = new System.Windows.Forms.Button();
             this.buttonsil = new System.Windows.Forms.Button();
             this.buttonistatistik = new System.Windows.Forms.Button();
-            this.buttonkacgunkaldi = new System.Windows.Forms.Button();
+            this.buttonyapilacaklar = new System.Windows.Forms.Button();
             this.labeltelefon = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.denemeleraytBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -77,7 +77,7 @@
             this.buttondenemeekle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttondenemeekle.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttondenemeekle.ForeColor = System.Drawing.Color.Black;
-            this.buttondenemeekle.Location = new System.Drawing.Point(1037, 95);
+            this.buttondenemeekle.Location = new System.Drawing.Point(1035, 90);
             this.buttondenemeekle.Name = "buttondenemeekle";
             this.buttondenemeekle.Size = new System.Drawing.Size(249, 75);
             this.buttondenemeekle.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.buttonsil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonsil.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonsil.ForeColor = System.Drawing.Color.Black;
-            this.buttonsil.Location = new System.Drawing.Point(1037, 349);
+            this.buttonsil.Location = new System.Drawing.Point(1035, 344);
             this.buttonsil.Name = "buttonsil";
             this.buttonsil.Size = new System.Drawing.Size(249, 70);
             this.buttonsil.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.buttonistatistik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonistatistik.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonistatistik.ForeColor = System.Drawing.Color.Black;
-            this.buttonistatistik.Location = new System.Drawing.Point(1037, 474);
+            this.buttonistatistik.Location = new System.Drawing.Point(1035, 469);
             this.buttonistatistik.Name = "buttonistatistik";
             this.buttonistatistik.Size = new System.Drawing.Size(249, 70);
             this.buttonistatistik.TabIndex = 3;
@@ -115,20 +115,20 @@
             this.buttonistatistik.UseVisualStyleBackColor = false;
             this.buttonistatistik.Click += new System.EventHandler(this.buttonistatistik_Click);
             // 
-            // buttonkacgunkaldi
+            // buttonyapilacaklar
             // 
-            this.buttonkacgunkaldi.BackColor = System.Drawing.Color.White;
-            this.buttonkacgunkaldi.FlatAppearance.BorderSize = 0;
-            this.buttonkacgunkaldi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonkacgunkaldi.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonkacgunkaldi.ForeColor = System.Drawing.Color.Black;
-            this.buttonkacgunkaldi.Location = new System.Drawing.Point(1037, 599);
-            this.buttonkacgunkaldi.Name = "buttonkacgunkaldi";
-            this.buttonkacgunkaldi.Size = new System.Drawing.Size(249, 70);
-            this.buttonkacgunkaldi.TabIndex = 4;
-            this.buttonkacgunkaldi.Text = "YAPILACAKLAR LİSTESİ";
-            this.buttonkacgunkaldi.UseVisualStyleBackColor = false;
-            this.buttonkacgunkaldi.Click += new System.EventHandler(this.buttonkacgunkaldi_Click);
+            this.buttonyapilacaklar.BackColor = System.Drawing.Color.White;
+            this.buttonyapilacaklar.FlatAppearance.BorderSize = 0;
+            this.buttonyapilacaklar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonyapilacaklar.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonyapilacaklar.ForeColor = System.Drawing.Color.Black;
+            this.buttonyapilacaklar.Location = new System.Drawing.Point(1035, 594);
+            this.buttonyapilacaklar.Name = "buttonyapilacaklar";
+            this.buttonyapilacaklar.Size = new System.Drawing.Size(249, 70);
+            this.buttonyapilacaklar.TabIndex = 4;
+            this.buttonyapilacaklar.Text = "YAPILACAKLAR LİSTESİ";
+            this.buttonyapilacaklar.UseVisualStyleBackColor = false;
+            this.buttonyapilacaklar.Click += new System.EventHandler(this.buttonkacgunkaldi_Click);
             // 
             // labeltelefon
             // 
@@ -147,7 +147,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(1037, 224);
+            this.button1.Location = new System.Drawing.Point(1035, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 70);
             this.button1.TabIndex = 8;
@@ -245,16 +245,16 @@
             // 
             // buttonyenile
             // 
-            this.buttonyenile.BackColor = System.Drawing.Color.White;
+            this.buttonyenile.BackColor = System.Drawing.Color.Transparent;
             this.buttonyenile.FlatAppearance.BorderSize = 0;
             this.buttonyenile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonyenile.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonyenile.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.buttonyenile.ForeColor = System.Drawing.Color.Black;
-            this.buttonyenile.Location = new System.Drawing.Point(869, 727);
+            this.buttonyenile.Location = new System.Drawing.Point(1219, 738);
             this.buttonyenile.Name = "buttonyenile";
-            this.buttonyenile.Size = new System.Drawing.Size(121, 39);
+            this.buttonyenile.Size = new System.Drawing.Size(89, 38);
             this.buttonyenile.TabIndex = 15;
-            this.buttonyenile.Text = "YENİLE ⭮";
+            this.buttonyenile.Text = "&YENİLE ⭮";
             this.buttonyenile.UseVisualStyleBackColor = false;
             this.buttonyenile.Click += new System.EventHandler(this.buttonyenile_Click);
             // 
@@ -280,7 +280,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labeltelefon);
-            this.Controls.Add(this.buttonkacgunkaldi);
+            this.Controls.Add(this.buttonyapilacaklar);
             this.Controls.Add(this.buttonistatistik);
             this.Controls.Add(this.buttonsil);
             this.Controls.Add(this.buttondenemeekle);
@@ -308,7 +308,7 @@
         private System.Windows.Forms.Button buttondenemeekle;
         private System.Windows.Forms.Button buttonsil;
         private System.Windows.Forms.Button buttonistatistik;
-        private System.Windows.Forms.Button buttonkacgunkaldi;
+        private System.Windows.Forms.Button buttonyapilacaklar;
         private System.Windows.Forms.Label labeltelefon;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource denemelerBindingSource1;

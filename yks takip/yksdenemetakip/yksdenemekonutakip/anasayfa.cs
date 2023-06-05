@@ -214,6 +214,7 @@ namespace yksdenemekonutakip
         private void buttonkacgunkaldi_Click(object sender, EventArgs e)
         {
             yapilacaklar frm =new yapilacaklar();
+            frm.telefon = labeltelefon.Text;
             frm.Show();
         }
     }

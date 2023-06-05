@@ -51,7 +51,7 @@ namespace yksdenemekonutakip
 
                    
                 
-                MessageBox.Show("KAYIT BAŞARILI-Sayfayı Yenileyin");
+                MessageBox.Show("KAYIT BAŞARILI");
                 this.Close();
 
 
